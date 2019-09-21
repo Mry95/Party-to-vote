@@ -1,0 +1,95 @@
+.list-v {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .ipt {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            input {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                outline: none;
+                border: 1px solid #ccc;
+                padding-left: 20px;
+            }
+        }
+        .tab {
+            width: 40px;
+            line-height: 40px;
+            display: flex;
+            >div {
+                flex: 1;
+                text-align: center;
+                white-space: nowrap;
+                margin: 0 20px;
+                &.active {
+                    border-bottom: 2px solid #333;
+                }
+            }
+        }
+        .m-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+    }
+    footer {
+        position: relative;
+        height: 60px;
+        background: #333;
+        display: flex;
+        justify-content: flex-end;
+        span {
+            width: 60px;
+            height: 60px;
+            display: block;
+            background: #eee;
+            border-radius: 50%;
+            position: absolute;
+            left: 25px;
+            top: -10px;
+            b {
+                right: 0;
+                top: 0;
+                position: absolute;
+                background: red;
+                width: 18px;
+                height: 18px;
+                text-align: center;
+                line-height: 18px;
+                border-radius: 20px;
+                color: white;
+                font-weight: normal;
+                font-size: 12px;
+                ;
+            }
+        }
+        .button {
+            margin: 10px 20px;
+            padding: 0 20px;
+            border-radius: 500px;
+            line-height: 40px;
+            border: none;
+            outline: none;
+            background: #ccc;
+        }
+    }
+}
+
+.ant-drawer-wrapper-body {
+    width: 100%;
+    height: 100%;
+}
+
+.ant-drawer-body {
+    height: 100%;
+    overflow-y: auto;
+}

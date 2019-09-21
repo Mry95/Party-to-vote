@@ -1,0 +1,28 @@
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    .button {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    .my-vote {
+        margin-top: 20px;
+        flex: 1;
+        h4 {
+            height: 25px;
+            line-height: 25px;
+            font-style: normal;
+            font-weight: normal;
+            color: #ccc;
+        }
+    }
+}
